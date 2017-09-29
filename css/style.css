@@ -4,18 +4,11 @@
 */
 
 
-@font-face {
-    font-family: 'Colaborate';
-    src: url('../fonts/Colaborate-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style:normal;
-	font-size: 500%;
 
-}
 
 @font-face {
-    font-family: 'Colaborate';
-    src: url('../fonts/Colaborate-Bold.woff') format('woff');
+    font-family: 'PT Mono';
+    src: url('../fonts/PT Mono.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 	font-size: 500%;
@@ -23,8 +16,9 @@
 
 
 html {
-	font-family: Colaborate, monospace;
-	font-size: 500%;
+	font-family: PT Mono, monospace;
+	font-size: 250%;
+
 }
 
 time {
@@ -41,4 +35,14 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body{
+  background-color: red;
+  color: yellow;
+}
+
+h6{
+	font-size: 50%;
+	text-align: center;
 }
