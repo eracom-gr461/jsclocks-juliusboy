@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>The JS Clocks</title>
-		<h6>IL EST</h6>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -19,6 +18,8 @@
 
     </body>
 	<script>
+	var hue = Math.floor((Math.random() * 360));
+
 
 	metronomeSeconde();
 	metronomeMinute();
@@ -53,6 +54,7 @@
 
 		document.getElementById("heure").style.top = getRandom(10, 90)+'%';
   	  document.getElementById("heure").style.left = getRandom(10, 90)+'%';
+	  	  document.getElementById("heure").style.color = "hsl("+hue+", 100%, 50%)";
 
 	}
 
@@ -64,7 +66,8 @@
 	  	document.getElementById("minute").innerHTML = minute+"’";
 
 		document.getElementById("minute").style.top = getRandom(10, 90)+'%';
-  	  document.getElementById("minute").style.left = getRandom(10, 90)+'%';
+  	  	document.getElementById("minute").style.left = getRandom(10, 90)+'%';
+	    document.getElementById("minute").style.color = "hsl("+hue+", 100%, 50%)";
 
 	}
 
@@ -78,11 +81,13 @@
 		var minute = date.getMinutes();
 		var seconde = date.getSeconds();
 		var formattedNumber = ("0" + seconde).slice(-2);
+		hue=hue+1;
 
 	  	document.getElementById("seconde").innerHTML = formattedNumber+"”";
 
 		document.getElementById("seconde").style.top = getRandom(10, 90)+'%';
   	  document.getElementById("seconde").style.left = getRandom(10, 90)+'%';
+	  document.getElementById("seconde").style.color = "hsl("+hue+", 100%, 50%)";
 
 	  // test conditionnel
 

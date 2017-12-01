@@ -11,13 +11,15 @@
     src: url('../fonts/PT Mono.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-	font-size: 500%;
+
+
 }
 
 
 html {
 	font-family: PT Mono, monospace;
 	font-size: 250%;
+	font-size: 10vw;
 
 }
 
@@ -38,8 +40,8 @@ html {
 }
 
 body{
-  background-color: red;
-  color: yellow;
+  background-color: white;
+  
 }
 
 h6{
